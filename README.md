@@ -10,7 +10,7 @@ Get started:
 
 1. You need Node.js installed on your computer.
 2. Run cd <project> (for example: cmd -> cd C:\Coding\EmailsGetDoctor)
-3. Then run: gulp
+3. Then run: npm start (This will kick off the build process.)
 
 The final version HTML files for emails are compiled to a folder called "dist" (as in "distribution").
 
