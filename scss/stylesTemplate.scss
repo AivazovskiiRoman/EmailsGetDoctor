@@ -1,0 +1,84 @@
+@import "foundation";
+a.link {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+p {
+    line-height: (22/16);
+}
+
+.gray {
+    background: $light-gray;
+}
+
+.blue {
+    color: $blue;
+}
+
+.yellow {
+    color: #d5dd05;
+}
+
+small {
+    color: $dark-gray;
+}
+
+table.button table td a {
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.separator-blue {
+    border-bottom: 1px dashed $blue;
+    line-height: 2.3 !important;
+    padding-left: 15px !important;
+}
+
+.separator-green {
+    border-bottom: 1px dashed $green;
+    line-height: 2.3 !important;
+    padding-left: 15px !important;
+}
+
+.padding15 {
+    padding: 15px 15px 0 !important;
+}
+
+.padding-plus {
+    padding: 15px 0 0 10px !important;
+}
+
+.padding-plus-r {
+    padding-top: 15px !important;
+}
+
+.padding-btm-0 {
+    padding-bottom: 0 !important;
+}
+
+.button a {
+    font-size: 20px !important;
+}
+
+.margin-btm-0 {
+    margin-bottom: 0 !important;
+}
+
+
+/* mobile */
+
+@media only screen and (max-width: 40em) {
+    h4, h5 {
+        font-size: 1.2em !important;
+    }
+    p {
+        font-size: 1em !important;
+    }
+    .padding15mob {
+        padding: 15px 15px 0 15px !important;
+    }
+    .padding-plus {
+        padding: 15px 0 0 0 !important;
+    }
+}
