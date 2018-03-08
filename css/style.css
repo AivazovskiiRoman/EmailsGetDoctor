@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #ABABAB;
+  background: #EDECEC;
+  font: 100%/1.5em "Varela Round", sans-serif;
+  padding: 15px;
+}
+
+a {
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+.preview {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page {
+  background: #FFF;
+  position: relative;
+  width: 33%;
+  float: left;
+  margin: 0 1px 1px 0;
+  text-align: center;
+  cursor: pointer;
+  color: #ABABAB;
+}
+
+.page:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.page:hover {
+  background: #777;
+  color: #FFF;
+}
+
+.page:last {
+  margin-right: 0;
+}
+
+span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 44px;
+}
+
+.js__target {
+  position: absolute;
+  background: #6CADDF;
+  color: #FFF;
+  padding: 44px;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  display: block;
+  overflow: hidden;
+}
+
+.js__target .content {
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+
+.js__target.move {
+  transition: all 400ms ease-in-out;
+  /* this should not be greater than the setTimeout milliseconds parameter */
+}
+
+.js__target.open {
+  opacity: 1;
+  /* adjust this if you want your modal slightly opaque */
+  z-index: 99999;
+}
+
+.js__target.expand {
+  top: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.js__target.expand .content,
+.js__target.expand .js__close {
+  opacity: 1;
+}
+
+.js__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  opacity: 0;
+  /* stops the element being shown immediately */
+  transition: all 200ms ease-in;
+}
+
+.js__target .js__close:after {
+  position: relative;
+  content: "x";
+  color: #ABABAB;
+  width: 25px;
+  height: 25px;
+  display: block;
+  border: 1px solid #CCC;
+  text-align: center;
+  background: #EEE
+}
