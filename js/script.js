@@ -1,7 +1,10 @@
 var emailArr = [
   "dist/gd_template_margarita.html",
-  "dist/gd_template_org_letter.html", 
-  "dist/getdoctor_hm_letter.html"
+  "dist/gd_template_org_letter.html",
+  "dist/getdoctor_hm_letter.html",
+  "dist/btz.html",
+  "dist/amavara.html",
+  "dist/gd_template_margarita2.html"
 ];
 for (let i = 0; i < emailArr.length; i++) {
   $(".email-" + i).click(function () {
